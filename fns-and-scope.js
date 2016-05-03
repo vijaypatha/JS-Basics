@@ -17,9 +17,11 @@ var name = 'Tyler';
 
 
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
+function getName (){
+  var userName = prompt("Name?");
+}
 
-
-  //Code Here
+  
 
 
 //////////////////PROBLEM 3////////////////////
@@ -29,7 +31,9 @@ var name = 'Tyler';
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-  //Code Here
+ function welcome() {
+   alert("welcome " + userName);
+ }
 
 
 //////////////////PROBLEM 4////////////////////
@@ -39,7 +43,12 @@ var name = 'Tyler';
 
 //What is the difference between arguments and parameters?
 
-  //Answer Here
+  //Answer Here - parameters are placeholders
+  // arguments are actual values passed to a function via placeholders 
+  function malt(a,b) { //a, b are paramenters
+    var x = a * b;
+  }
+  malt(3,10); //3 and 10 are arguments
 
 
 //////////////////PROBLEM 5////////////////////
@@ -59,7 +68,10 @@ var name = 'Tyler';
 
 //Create a function called myName that returns your name
 
-  //Code Here
+  function myName() {
+    return myName;
+  }
+  myName("vijay");
   
 
 
@@ -77,7 +89,10 @@ var name = 'Tyler';
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
-  //Code Here
+ var outerFn = function() {
+   return outerFn;
+ }
+ 
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
