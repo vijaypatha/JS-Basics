@@ -113,3 +113,4 @@ function outerFn () {
   var innerFn =  outerFn();
 
 //Now invoke innerFn.
+innerFn();
