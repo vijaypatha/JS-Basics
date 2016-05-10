@@ -5,7 +5,7 @@ var outer = function(){ //function expression - will not be hoisted
   }
 };
 
-//////////////////PROBLEM 1//////////////////// DONE
+//////////////////PROBLEM 1//////////////////// DONE****
 // Above you're given a function that returns another function which has a closure over the name variable //function exp outer - VJ.
 // Invoke outer saving the return value into another variable called 'inner'.
 
@@ -19,7 +19,7 @@ inner();
 
 
 
-//////////////////PROBLEM 2//////////////////// DONE
+//////////////////PROBLEM 2//////////////////// DONE****
 
 
 //var callFriend = function(){
@@ -48,7 +48,7 @@ console.log(callFriend());
 
 
 
-//////////////////PROBLEM 3//////////////////// DONE
+//////////////////PROBLEM 3//////////////////// DONE*****
 
 
 
@@ -71,7 +71,7 @@ function makeCounter() {
 
 
 
-//////////////////PROBLEM 4////////////////////
+//////////////////PROBLEM 4//////////////////// Done*** not sure
 
 
 // Inside the function called counterFactory
@@ -84,7 +84,13 @@ function counterFactory(value) {
   return {}
 
     // Code inc function
+  function inc() {
+      value++;
+  }
     // Code dec function
+    function dec() {
+        value--;
+    }
 
 }
 
@@ -94,7 +100,7 @@ counter = counterFactory(10);
 
 
 
-//////////////////PROBLEM 5//////////////////// DONE
+//////////////////PROBLEM 5//////////////////// DONE ****
 
 
 // Inside the motivation function create another function called message that will return welcomeText + firstname + lastname
@@ -117,7 +123,7 @@ counter = counterFactory(10);
 
 
 
-//////////////////PROBLEM 6////////////////////
+//////////////////PROBLEM 6//////////////////// Done ****sort of
 // Inside the return create a publicMethod property that is a function that invokes privateMethod. After you create the privateMethod
 // Invoke it by calling module.publicMethod(); outside the module scope
 
@@ -135,13 +141,13 @@ counter = counterFactory(10);
     // Anything that is being returned is made public and can be invoked from outside our lexical scope
 
     return {
-      // Code here
+     module = privateMethod();
     };
 
   })();
 
 //Uncomment this after you create your public method
-//   module.publicMethod();
+module.publicMethod();
 
 
 
