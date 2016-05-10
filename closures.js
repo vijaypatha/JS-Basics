@@ -5,7 +5,7 @@ var outer = function(){ //function expression - will not be hoisted
   }
 };
 
-//////////////////PROBLEM 1////////////////////
+//////////////////PROBLEM 1//////////////////// DONE
 // Above you're given a function that returns another function which has a closure over the name variable //function exp outer - VJ.
 // Invoke outer saving the return value into another variable called 'inner'.
 
@@ -19,16 +19,16 @@ inner();
 
 
 
-//////////////////PROBLEM 2////////////////////
+//////////////////PROBLEM 2//////////////////// DONE
 
 
-var callFriend = function(){
-  var friend = 'Jake';
-  function callF(number){
-    return 'Calling ' + friend + ' at ' + number;
-  }
-  return callF;
-};
+//var callFriend = function(){
+//  var friend = 'Jake';
+//  function callF(number){
+//    return 'Calling ' + friend + ' at ' + number;
+//  }
+//  return callF;
+//};
 
 
 //Above you're given a callFriend function that returns another function.
@@ -48,21 +48,26 @@ console.log(callFriend());
 
 
 
-//////////////////PROBLEM 3////////////////////
+//////////////////PROBLEM 3//////////////////// DONE
 
 
 
 /*
   Write a function called makeCounter that makes the following code work properly.
 */  //Code Here
+function makeCounter() {
+    var count = 0;
+    count++;
+
+}
 
 
 //Uncomment this once you make your function
-//   var count = makeCounter();
-//   count(); // 1
-//   count(); // 2
-//   count(); // 3
-//   count(); // 4
+   var count = makeCounter();
+  count(); // 1
+ count(); // 2
+  count(); // 3
+  count(); // 4
 
 
 
@@ -89,7 +94,7 @@ counter = counterFactory(10);
 
 
 
-//////////////////PROBLEM 5////////////////////
+//////////////////PROBLEM 5//////////////////// DONE
 
 
 // Inside the motivation function create another function called message that will return welcomeText + firstname + lastname
@@ -99,10 +104,13 @@ counter = counterFactory(10);
     var welcomeText = 'Your doing awesome keep it up    ';
 
     // code message function here
+      function message() {
+          return welcomeText + firstname + lastname;
+      }
 
 
     //Uncommment this to return the value of your invoked message function
-    // return message()
+     return message()
   }
 
   motivation('Billy', 'Bob'); // 'Your doing awesome keep it up Billy Bob
